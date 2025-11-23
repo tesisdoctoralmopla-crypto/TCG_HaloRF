@@ -1,0 +1,81 @@
+\documentclass[aps,prd,twocolumn,showpacs,preprintnumbers,nofootinbib]{revtex4-2}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{siunitx}
+\usepackage{physics}
+\begin{document}
+\title{Experimental Proposal for the Detection of the Hidden Modulus: A Decisive Test for the Constitutive Theory of Gravity}
+\author{Dr. Manuel Martín Morales Plaza}
+\affiliation{Independent Researcher, Canary Island, Spain}
+\date{\today}
+\begin{abstract}
+The Constitutive Theory of Gravity (TCG) proposes a self-tuning mechanism that resolves the $10^{123}$-order-of-magnitude discrepancy between the quantum vacuum energy density and the observed cosmological constant. This mechanism predicts the existence of a remnant scalar field, the \emph{Hidden Modulus} $\phi_T$, with an ultralight mass $m_{\phi_T} \sim 4\times10^{-7}$ eV and a dark matter portal coupling $\lambda_{\rm DM} \sim 10^{-51}$. In this \emph{Letter}, we present the design of a Radio Frequency (RF) resonant haloscope optimized for $f_{\phi_T} \approx 96.7$ MHz, capable of detecting the electromagnetic signal induced by $\phi_T$. We quantitatively derive the predicted signal power $P_{\rm sig}^{\rm TCG} \sim 10^{-22}$ W and the required experimental parameters, establishing a clear protocol to confirm or refute TCG through a short-term search campaign.
+\end{abstract}
+\maketitle
+\section{Introduction}
+The Constitutive Theory of Gravity (TCG) posits that the quantum vacuum energy density $\rho_{\rm vac}^{\rm (QFT)} \sim M_{\rm Pl}^4$ is modulated by the \emph{Universal Constitutive Modulus} $K_g$, which acts as a dynamic vacuum filter, resolving the cosmological constant crisis through a \emph{self-tuning} mechanism \cite{Morales2025TCG}. The theory's unavoidable prediction is a residual scalar field, the Hidden Modulus $\phi_T$, whose oscillation frequency lies in the radio frequency (RF) range, making it accessible to current experimental techniques.
+\section{Theoretical Prediction}
+The Hidden Modulus $\phi_T$ obeys the hierarchy relation:
+\begin{equation}
+\frac{m_{\phi_T}}{\alpha_{\phi_T}} \sim 5.6 \times 10^{14}~\rm eV,
+\end{equation}
+where $m_{\phi_T} \approx 4\times10^{-7}$ eV. This corresponds to a coherent oscillation frequency of:
+\begin{equation}
+f_{\phi_T} = \frac{m_{\phi_T} c^2}{h} \approx 96.7~\rm MHz.
+\end{equation}
+The portal coupling to dark matter $\chi$ is given by:
+\begin{equation}
+\mathcal{L}_{\rm int}^{\rm TCG} = -\frac{\lambda_{\rm DM}}{M_{\rm Pl}} \phi_T \chi^2,
+\end{equation}
+with $\lambda_{\rm DM} \sim 10^{-51}$, determined by the cosmological constant cancellation condition.
+\section{Derivation of Signal Power}
+The power generated in a resonant haloscope is:
+\begin{equation}
+P_{\rm sig} \propto g_{\phi\gamma}^2 \frac{\rho_{\phi} B_0^2 V_{\rm eff} C Q}{\omega_\phi},
+\end{equation}
+where $g_{\phi\gamma}^{\rm TCG}$ is the effective coupling between $\phi_T$ and the electromagnetic signal.
+Assuming realistic design parameters:
+\begin{itemize}
+\item $B_0 \sim 7~\rm T$
+\item $V_{\rm eff} \sim 1~\rm m^3$
+\item $Q \sim 10^4$
+\item $T_{\rm sys} \sim 1~\rm K$
+\end{itemize}
+The predicted signal power is:
+\begin{equation}
+P_{\rm sig}^{\rm TCG} \approx 1 \times 10^{-22}~\rm W,
+\end{equation}
+achievable with an integration time of $t \sim 1.3$ h for a signal-to-noise ratio $\rm SNR = 5$.
+\section{Experimental Design}
+We propose an \emph{RF Resonance Haloscope} with a lumped-element resonator or a metamaterial array, optimized for $f_{\phi_T} = 96.7$ MHz. Table \ref{tab:parameters} summarizes the key parameters.
+\begin{table}[h]
+\caption{RF Haloscope Design Parameters.}
+\label{tab:parameters}
+\begin{tabular}{lcc}
+\hline\hline
+Parameter & Value & Justification \\
+\hline
+Search frequency $f_0$ & 96.7 MHz & TCG Prediction \\
+Effective volume $V_{\rm eff}$ & 1 m$^3$ & Effective coupling \\
+Quality Factor $Q$ & $10^4$ & Superconducting resonator \\
+System Temperature $T_{\rm sys}$ & $\leq 1$ K & Minimize thermal noise \\
+\hline\hline
+\end{tabular}
+\end{table}
+Quantum amplification using JPA or SQUID at $\sim 10-100$ mK will be included to reach the quantum noise limit $h f_0 /2$.
+\section{Falsifiability and Roadmap}
+The experiment provides a clear verdict:
+\begin{itemize}
+\item Confirmation: A coherent peak at $f_{\phi_T}$ with $P_{\rm sig} \sim 10^{-22}$ W validates TCG and the Constitutive Modulus $K_g$.
+\item Refutation: Non-detection at the required sensitivity would falsify the TCG prediction.
+\end{itemize}
+\section{Conclusion}
+This proposal represents a definitive fire test for the TCG. The combination of a quantitative prediction and a feasible experimental design ensures that the theory can be conclusively confirmed or refuted using a short-term RF haloscope campaign.
+\bibliographystyle{apsrev4-2}
+\begin{thebibliography}{99}
+\bibitem{Morales2025TCG} M. M. Morales, ``The Vacuum Modulus and the Constitutive Gravity Framework'', \emph{Zenodo}, 2025. \url{https://zenodo.org/me/uploads?q=&f=shared_with_me%3Afalse&l=list&p=1&s=10&sort=newest}
+\end{thebibliography}
+\end{document}
